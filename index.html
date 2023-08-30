@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Portal</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <style>
+        .font-DM{
+            font-family: 'DM Serif Display', serif;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar bg-base-100">
+            <div class="flex-1 gap-3">
+              <button class="btn bg-blue-500 normal-case text-white text-xl">News</butt>
+              <button class="font-semibold text-blue-500 normal-case text-xl">Portal</button>
+            </div>
+            <div class="flex-none">
+              <div class="dropdown dropdown-end">
+                <div class="flex gap-3 mr-5">
+                    <button class="text-xl font-semibold text-blue-500 border-b-2 border-blue-500">News</button>
+                    <button class="text-xl font-semibold text-gray-400">Blog</button>
+                </div>            
+                </div>
+              </div>
+              <div class="dropdown dropdown-end">
+                <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                  <div class="w-10 rounded-full">
+                    <img title="Pro" src="./images/rm328-366-tong-08_1.jpg" />
+                  </div>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li>
+                    <a class="justify-between">
+                      Profile
+                      <span class="badge">New</span>
+                    </a>
+                  </li>
+                  <li><a>Settings</a></li>
+                  <li><a>Logout</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    </nav>
+    <hr>
+    <header>
+        <h1 class="text-4xl md:text-5xl text-center mt-6 font-DM">US Portal News Paper</h1>
+        <div class="w-full flex justify-center py-3">
+            <div id="tap-container" class="tabs">
+                <!-- <a class="tab">Tab 1</a> 
+                <a class="tab tab-active">Tab 2</a> 
+                <a class="tab">Tab 3</a> -->
+              </div>
+        </div>
+        <!-- headlien -->
+        <div class="container mx-auto bg-gray-100 py-2 rounded-md">
+            <marquee behavior="" direction="" class="text-red-600">News portal is one of the most popular newspaper fonts and a long-time favorite of many designers. While it's a simple sans serif, Helvetica is also beautiful and very easy to read. If you don't already have Helvetica in your arsenal, it's certainly worth adding.</marquee>
+        </div>
+    </header>
+    <main class="mt-14 px-5">
+        <!-- news -->
+        <section>
+            <!-- loading snipper -->
+            <div id="loading-sniper" class="text-center  pb-16 hidden">
+                <span class="loading loading-spinner text-primary"></span>
+            </div>
+            <!-- news card container -->
+            <div id="card-container" class="container mx-auto grid grid-cols-1 gap-5">
+
+            </div>
+        </section>
+       
+    </main>
+    <script src="news.js"></script>
+</body>
+</html>
